@@ -35,6 +35,7 @@ img {
 	--accent-colot-hero: #188CE8;
 	--background-color: #F5F5F5;
 	--background-team-color: #F5F4FA;
+	--background-services-color: #F5F4FA;
 	--footer-background-color: #2F303A;
 	--contact-color: #757575;
 	--white-color: #ffffff;
@@ -217,7 +218,6 @@ img {
 
 
 .hero {
-
 	background-color: var(--footer-background-color);
 	text-align: center;
 
@@ -234,6 +234,7 @@ img {
 			rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 }
 
 
@@ -266,6 +267,34 @@ img {
 
 .features-list .list {
 	max-width: 270px;
+
+}
+
+.features-list>.list::before {
+	content: "";
+	display: block;
+	height: 120px;
+	margin-bottom: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: var(--background-services-color);
+	border-radius: 4px;
+}
+
+.clock::before {
+	background-image: url(../images/services/clock.svg);
+}
+
+.group::before {
+	background-image: url(../images/services/group.svg);
+}
+
+.disgram::before {
+	background-image: url(../images/services/diagram.svg);
+}
+
+.astronaut::before {
+	background-image: url(../images/services/astronaut.svg);
 }
 
 .features-list .list:not(:last-child) {
