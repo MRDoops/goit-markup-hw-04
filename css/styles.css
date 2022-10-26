@@ -216,7 +216,6 @@ img {
 	margin: 0 auto 30px;
 }
 
-
 .hero {
 	background-color: var(--footer-background-color);
 	text-align: center;
@@ -514,6 +513,13 @@ img {
 	background-color: var(--white-color);
 	list-style: none;
 	flex-basis: calc((100% - 30px * 2) / 3);
+
+}
+
+.post-content:hover {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+		0px 4px 4px rgba(0, 0, 0, 0.06),
+		1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 
