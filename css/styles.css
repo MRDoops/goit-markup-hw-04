@@ -57,12 +57,12 @@ img {
 	padding: 94px 0;
 }
 
-
 /* hover focus */
 .active:focus,
 .active:hover {
 	color: var(--accent-color);
 }
+
 
 .hero .button:focus,
 .hero .button:hover {
@@ -105,6 +105,10 @@ img {
 }
 
 /* Header */
+.icon-svg {
+	margin-right: 10px;
+	fill: currentColor;
+}
 
 .header {
 	border-bottom: var(--border-card);
@@ -178,6 +182,11 @@ img {
 	margin-right: 50px;
 }
 
+.side-nav-contact {
+	display: flex;
+	align-items: center;
+}
+
 .contacts {
 	list-style: none;
 	display: flex;
@@ -217,23 +226,24 @@ img {
 }
 
 .hero {
-	background-color: var(--footer-background-color);
 	text-align: center;
-
 	padding-top: 200px;
 	padding-bottom: 200px;
 	margin: auto;
 	max-height: 600px;
+	max-width: 1600px;
+
+	background-color: var(--footer-background-color);
 
 	justify-content: center;
 	align-items: center;
 	display: flex;
-
-	background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-			rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
+
 }
 
 
@@ -269,32 +279,6 @@ img {
 
 }
 
-.features-list>.list::before {
-	content: "";
-	display: block;
-	height: 120px;
-	margin-bottom: 30px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: var(--background-services-color);
-	border-radius: 4px;
-}
-
-.clock::before {
-	background-image: url(../images/services/clock.svg);
-}
-
-.group::before {
-	background-image: url(../images/services/group.svg);
-}
-
-.disgram::before {
-	background-image: url(../images/services/diagram.svg);
-}
-
-.astronaut::before {
-	background-image: url(../images/services/astronaut.svg);
-}
 
 .features-list .list:not(:last-child) {
 	margin-right: 30px;
@@ -448,7 +432,16 @@ img {
 /* link-stile */
 .post-content-link {
 	text-decoration: none;
+	display: block;
 }
+
+.post-content-link:hover,
+.post-content-link:focus {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+		0px 4px 4px rgba(0, 0, 0, 0.06),
+		1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 
 .post-content-link .post-title {
 	color: var(--primary-text-color);
@@ -515,13 +508,6 @@ img {
 	flex-basis: calc((100% - 30px * 2) / 3);
 
 }
-
-.post-content:hover {
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-		0px 4px 4px rgba(0, 0, 0, 0.06),
-		1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 
 .post-subtitle {
 	font-weight: 700;
