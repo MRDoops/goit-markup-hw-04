@@ -43,6 +43,7 @@ img {
 	--logo-color-black: #000000;
 	--border-card: 1px solid #EEEEEE;
 	--fill-color: #AFB1B8;
+	--footer-bg-svg-color: rgba(255, 255, 255, 0.1);
 }
 
 /* section-container */
@@ -186,6 +187,8 @@ img {
 .side-nav-contact {
 	display: flex;
 	align-items: center;
+	align-items: baseline;
+
 }
 
 .contacts {
@@ -200,6 +203,8 @@ img {
 	letter-spacing: 0.02em;
 	color: var(--contact-color);
 	text-decoration: none;
+	align-items: center;
+	display: flex;
 }
 
 /* Main */
@@ -322,18 +327,20 @@ img {
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
+
+	color: var(--fill-color);
+	background-color: var(--white-color);
 }
 
 .social-icons {
-	fill: var(--fill-color);
+	fill: currentColor;
 }
 
-.socials-link:hover {
-	background-color: var(--accent-color)
-}
+.socials-link:hover,
+.socials-link:focus {
+	color: var(--white-color);
+	background-color: var(--accent-color);
 
-.socials-link:hover .social-icons {
-	fill: #EEEEEE;
 }
 
 
@@ -389,9 +396,21 @@ img {
 	height: 92px;
 	justify-content: center;
 	align-items: center;
+
+	border: 1px solid #AFB1B8;
+	border-radius: 4px;
+	color: var(--fill-color);
 }
 
+.client-item {
+	fill: currentColor;
+}
 
+.client-icon:hover,
+.client-icon:focus {
+	border-color: var(--accent-color);
+	color: var(--accent-color);
+}
 
 
 
@@ -456,17 +475,22 @@ img {
 }
 
 /* Footer */
+.footer-container {
+	display: flex;
+	align-items: baseline;
+}
 .addres-list-colum {
 	list-style: none;
 	display: block;
 }
 
 .footer-list {
-	background-color: var(--footer-background-color);
+	max-width: 1600px;
 	margin: auto;
 	padding-top: 60px;
 	padding-bottom: 60px;
-
+	display: flex;
+	background-color: var(--footer-background-color);
 }
 
 
@@ -474,7 +498,9 @@ img {
 	padding-bottom: 9px;
 }
 
-
+.footer-content-container {
+	margin-right: 70px;
+}
 
 .address-list {
 	font-style: normal;
@@ -492,6 +518,40 @@ img {
 	text-decoration: none;
 	color: var(--footer-contact-color);
 	text-decoration: none;
+}
+
+.join-text {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 0.87;
+	text-transform: uppercase;
+	color: var(--white-color);
+	margin-bottom: 20px;
+}
+.join-list {
+	display: flex;
+	gap: 10px;
+}
+.join-icon {
+	display: flex;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--footer-bg-svg-color);
+	color: var(--white-color);
+}
+.join-icon:hover,
+.join-icon:focus {
+	background-color: var(--accent-color);
+}
+
+
+
+
+.linc-icon {
+	fill: currentColor;
 }
 
 /* portfolio */
