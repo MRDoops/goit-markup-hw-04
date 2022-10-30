@@ -52,7 +52,6 @@ img {
 	padding: 0 15px;
 	margin: 0 auto;
 	align-items: center;
-	/* display: flex; */
 }
 
 .section {
@@ -345,7 +344,7 @@ img {
 
 
 .social-item {
-	margin-bottom: 30px;
+	/* margin-bottom: 30px; */
 }
 
 .social {
@@ -449,10 +448,8 @@ img {
 }
 
 .card-content {
-	padding-left: 62px;
-	padding-right: 61px;
 	padding-top: 30px;
-	margin-bottom: 16px;
+	margin-bottom: 30px;
 }
 
 
@@ -470,8 +467,7 @@ img {
 	line-height: 1.18;
 	text-align: center;
 	color: var(--primary-text-color);
-
-
+	margin-bottom: 16px;
 }
 
 /* Footer */
@@ -479,6 +475,7 @@ img {
 	display: flex;
 	align-items: baseline;
 }
+
 .addres-list-colum {
 	list-style: none;
 	display: block;
@@ -528,10 +525,12 @@ img {
 	color: var(--white-color);
 	margin-bottom: 20px;
 }
+
 .join-list {
 	display: flex;
 	gap: 10px;
 }
+
 .join-icon {
 	display: flex;
 	width: 44px;
@@ -542,6 +541,7 @@ img {
 	background-color: var(--footer-bg-svg-color);
 	color: var(--white-color);
 }
+
 .join-icon:hover,
 .join-icon:focus {
 	background-color: var(--accent-color);
